@@ -1,0 +1,32 @@
+﻿<Window x:Class="Dame.Views.StatisticsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dame.Views"
+        mc:Ignorable="d"
+        Title="Statistics" Height="300" Width="500">
+    <Grid Background="Gainsboro" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="0,40,0,0">
+            <Border Width="45" Height="45" BorderThickness="0" BorderBrush="#000f00">
+                <Image Source="{Binding RedTexture}" Stretch="UniformToFill"/>
+            </Border>
+            <TextBlock Text="{Binding RedWins, StringFormat='Red Wins: {0}'}" HorizontalAlignment="Center" FontSize="20" FontWeight="Black" Margin="0,20,0,0"/>
+            <TextBlock Text="Cu maximul de piese" HorizontalAlignment="Center" FontSize="20" FontWeight="Black" Margin="0,20,0,0"/>
+            <TextBlock Text="{Binding RedMaxPieces, StringFormat='ramase: {0}'}" HorizontalAlignment="Center" FontSize="20" FontWeight="Black"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,40,0,0">
+            <Border Width="45" Height="45" BorderThickness="0" BorderBrush="#000f00">
+                <Image Source="{Binding WhiteTexture}" Stretch="UniformToFill"/>
+            </Border>
+            <TextBlock Text="{Binding WhiteWins, StringFormat='White Wins: {0}'}" HorizontalAlignment="Center" FontSize="20" FontWeight="Black" Margin="0,20,0,0"/>
+            <TextBlock Text="Cu maximul de piese" HorizontalAlignment="Center" FontSize="20" FontWeight="Black" Margin="0,20,0,0"/>
+            <TextBlock Text="{Binding WhiteMaxPieces, StringFormat='ramase: {0}'}" HorizontalAlignment="Center" FontSize="20" FontWeight="Black"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

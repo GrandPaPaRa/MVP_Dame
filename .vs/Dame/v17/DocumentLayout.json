@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proiecte2024\\MVP\\Dame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\services\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\services\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\commands\\selectpiececommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\commands\\selectpiececommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\resources\\savedstatistics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\resources\\savedstatistics.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|d:\\proiecte2024\\mvp\\dame\\dame\\commands\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{908CBCFF-D2BD-48AD-9FBC-C750DE337661}|Dame\\Dame.csproj|solutionrelative:dame\\commands\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Dame\\Views\\MainWindow.xaml",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Dame\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-17T12:44:43.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SavedStatistics.json",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Resources\\SavedStatistics.json",
+              "RelativeDocumentMoniker": "Dame\\Resources\\SavedStatistics.json",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Resources\\SavedStatistics.json",
+              "RelativeToolTip": "Dame\\Resources\\SavedStatistics.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T12:31:44.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectPieceCommand.cs",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Commands\\SelectPieceCommand.cs",
+              "RelativeDocumentMoniker": "Dame\\Commands\\SelectPieceCommand.cs",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Commands\\SelectPieceCommand.cs",
+              "RelativeToolTip": "Dame\\Commands\\SelectPieceCommand.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T11:43:34.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Services\\Utility.cs",
+              "RelativeDocumentMoniker": "Dame\\Services\\Utility.cs",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Services\\Utility.cs",
+              "RelativeToolTip": "Dame\\Services\\Utility.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T11:39:13.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoveCommand.cs",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Commands\\MoveCommand.cs",
+              "RelativeDocumentMoniker": "Dame\\Commands\\MoveCommand.cs",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Commands\\MoveCommand.cs",
+              "RelativeToolTip": "Dame\\Commands\\MoveCommand.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T11:33:20.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Services\\GameLogic.cs",
+              "RelativeDocumentMoniker": "Dame\\Services\\GameLogic.cs",
+              "ToolTip": "D:\\Proiecte2024\\MVP\\Dame\\Dame\\Services\\GameLogic.cs",
+              "RelativeToolTip": "Dame\\Services\\GameLogic.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAAPQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T11:33:15.93Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
