@@ -1,0 +1,111 @@
+﻿<Window x:Class="Dame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dame"
+        mc:Ignorable="d"
+        Title="Dame" Height="760" Width="800" Background="Gainsboro">
+    <StackPanel  HorizontalAlignment="Center">
+
+        <!-- Menu bar -->
+
+        <Menu Height="22" DockPanel.Dock="Top"  HorizontalAlignment="Stretch" VerticalAlignment="Top" MinWidth="2000" >
+            <MenuItem Header="File" IsCheckable="False">
+                <MenuItem Header="New Game" IsCheckable="False" Command="{Binding NewGame}"/>
+                <MenuItem Header="Save Game" IsCheckable="False" Command="{Binding SaveGame}"/>
+                <MenuItem Header="Load Game" IsCheckable="False" Command="{Binding LoadGame}"/>
+                <MenuItem Header="Statistics" IsCheckable="False" Command="{Binding Statistics}"/>
+            </MenuItem>
+            <MenuItem Header="Options">
+                <MenuItem Header="Multiple Jump" IsCheckable="False">
+                    <MenuItem Command="{Binding MultipleJumpOn}" Header="On" IsChecked="{Binding MultipleJump.OnState}"/>
+                    <MenuItem Command="{Binding MultipleJumpOff}" Header="Off" IsChecked="{Binding MultipleJump.OffState}"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help" IsCheckable="False">
+                <MenuItem Header="About" IsCheckable="False" Command="{Binding About}"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid Background="Gainsboro" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Board View -->
+                <Grid Grid.Column="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <ItemsControl ItemsSource="{Binding Board}" Grid.Row="0" Margin="30,30,0,0">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <ItemsControl ItemsSource="{Binding}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Border Width="75" Height="75" BorderThickness="1" BorderBrush="#000f00">
+                                                    <Image Source="{Binding CellTexture}" Stretch="UniformToFill"/>
+                                                </Border>
+                                                <Button Command="{Binding ClickPieceCommand}" CommandParameter="{Binding Coord}">
+                                                    <Button.Template>
+                                                        <ControlTemplate>
+                                                            <Image Source="{Binding Piece.Texture, TargetNullValue={x:Null}}" Height="70" Width="70"/>
+                                                        </ControlTemplate>
+                                                    </Button.Template>
+                                                </Button>
+                                                <Button Command="{Binding MovePieceCommand}" CommandParameter="{Binding Coord}">
+                                                    <Button.Template>
+                                                        <ControlTemplate>
+                                                            <Image Source="{Binding HintTexture, TargetNullValue={x:Null}}" Stretch="UniformToFill" Width="74" Height="74"/>
+                                                        </ControlTemplate>
+                                                    </Button.Template>
+                                                </Button>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <!-- Player Count View -->
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="30,15,0,0">
+                        <Border Width="45" Height="45" BorderThickness="0" BorderBrush="#000f00" HorizontalAlignment="Left">
+                            <Image Source="{Binding PlayerCount.RedPieceTexture}" Stretch="UniformToFill"/>
+                        </Border>
+                        <TextBlock Text=":" FontSize="20" FontWeight="Bold" Margin="4,7,0,0"/>
+                        <TextBlock Text="{Binding PlayerCount.RedCount}" FontSize="20" FontWeight="Bold" Margin="4,7,0,0"/>
+
+                        <Border Width="45" Height="45" BorderThickness="0" BorderBrush="#000f00" HorizontalAlignment="Left" Margin="440,0,0,0">
+                            <Image Source="{Binding PlayerCount.WhitePieceTexture}" Stretch="UniformToFill"/>
+                        </Border>
+                        <TextBlock Text=":" FontSize="20" FontWeight="Bold" Margin="4,7,0,0"/>
+                        <TextBlock Text="{Binding PlayerCount.WhiteCount}" FontSize="20" FontWeight="Bold" Margin="4,7,0,0"/>
+                    </StackPanel>
+                </Grid>
+                <!-- Player Turn View -->
+
+                <StackPanel Grid.Column="1" VerticalAlignment="Center" Height="100" Margin="0,0,0,40">
+                    <Border Width="75" Height="75" BorderThickness="0" BorderBrush="#000f00" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0">
+                        <Image Source="{Binding PlayerTurn.Texture}" Stretch="UniformToFill"/>
+                    </Border>
+                    <TextBlock Text="Player Turn" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                </StackPanel>
+
+
+            </Grid>
+        </StackPanel>
+
+
+    </StackPanel>
+
+</Window>
